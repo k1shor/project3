@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    h1{
+        text-align: center;
+    }
+
+    form{
+        width: 500px;
+        background-color: cadetblue;
+        margin: auto;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px 5px gray ;
+        /* text-align: center; */
+    }
+
+    label{
+        font-size: 20px;
+        display: inline-block;
+        width: 30%;
+        color: blue;
+    }
+    .label1{
+        display: inline;
+    }
+
+    input[type="text"], input[type="email"],input[type="password"], input[type="date"], input[type="number"]{
+        width:60%;
+        height: 30px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        color: blue;
+        font-size: 20px;
+        padding-left: 10px;
+        font-weight: bold;
+    }
+
+    select, input[type="file"]{
+        height: 30px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+
+    }
+    textarea{
+        width: 60%;
+        height: 75px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+
+
+    }
+    button, input[type="submit"], input[type="reset"]{
+        background-color: darkblue;
+        color: white;
+        height: 30px;
+        width: 125px;
+        border-radius: 5px;
+        margin-left: 60px;
+    }
+
+    select{
+        background-color: cornflowerblue;
+        color: white;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+    input[type="text"]:focus, input[type="email"]:focus,input[type="password"]:focus, input[type="date"]:focus, input[type="number"]:focus, textarea:focus{
+        background-color: cyan;
+    }
+    label:hover, input[type="submit"]:hover, input[type="reset"]:hover{
+        cursor: pointer;
+    }
+
+    @media screen and (max-width:600px){
+        label{
+            display: block;
+        }
+        input[type="text"], textarea,input[type="email"],input[type="password"], input[type="date"], input[type="number"]{
+            display: block;
+            width: 100%;
+        }
+        select, input[type="checkbox"],[type="radio"]{
+            margin-left: 50px;
+            margin-bottom: 30px;
+
+        }
+
+    }
+
+
+</style>
+
+<body>
+    <h1>Form</h1>
+    
+    <form>
+
+        <!-- label  -->
+        <label for="fname">First Name:</label>
+        <!-- input  -->
+        <!-- type = text -->
+        <input type="text" id="fname" name="fname" width="10px">
+        <br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname">
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="Password">
+        <br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender"><label class="label1" for="male">Male</label>
+        <input type="radio" id="female" name="gender"><label class="label1" for="female">female</label>
+        <input type="radio" id="other" name="gender"><label class="label1" for="other">Other</label>
+        <br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date">
+        <br>
+        <label>
+            Date of Birth
+        </label>
+        <select name="year" id="year">
+            <option value="1999">1999</option>
+            <option value="0">2000</option>
+            <option value="1">2001</option>
+            <option value="2">2002</option>
+            <option value="3">2003</option>
+        </select>
+
+        <label class="label1">Month</label>
+        <select name="" id="">
+            <option value="">Jan</option>
+            <option value="">Feb</option>
+            <option value="">Mar</option>
+            <option value="">Apr</option>
+            <option value="">May</option>
+            <option value="">Jun</option>
+            <option value="">Jul</option>
+            <option value="">Aug</option>
+            <option value="">Sep</option>
+            <option value="">Oct</option>
+            <option value="">Nov</option>
+            <option value="">Dec</option>
+        </select>
+        <label class="label1">Date</label>
+        <select name="" id="">
+            <option value="">1</option>
+        </select>
+        <br>
+        <label>Hobbies</label>
+        <input type="checkbox">
+        <label class="label1" for="read">Reading</label>
+        <input type="checkbox">
+        <label class="label1" for="travel">Travelling</label>
+        <input type="checkbox">
+        <label class="label1" for="music">Music</label>
+        <br>
+        <label for="phone">Phone Number</label>
+        <input type="number">
+        <br>
+        <label for="image">Image</label>
+        <input type="file" id="image">
+        <br>
+        <label for="desc">Description</label>
+        <textarea id="desc"></textarea>
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+
+        <!-- <button>SUBMIT</button> -->
+
+
+    </form>
+
+</body>
+
+</html>

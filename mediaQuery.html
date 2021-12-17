@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .div1{
+            height: 500px;
+            width: 1000px;
+            background-color: blue;
+            display: flex;
+        }
+        .item{
+            height: 100px;
+            width: 400px;
+            background-color: cadetblue;
+            margin: 20px;
+        }
+
+        @media screen and (max-width:600px)
+        {
+            .div1{
+                width:100%;
+                background-color: blueviolet;
+                flex-direction: column;
+            }
+            .item{
+                display: none;
+            }
+            
+        }
+        @media screen and (min-width:600px) {
+            .div1{
+                width:100%;
+                background-color:red;
+                flex-direction: column;
+            }
+            
+            
+        }
+        @media screen and (min-width:700px) {
+            .div1{
+                width:100%;
+                background-color:green;
+                flex-direction: column;
+            }
+            
+        }
+        @media screen and (min-width:900px) {
+            .div1{
+                width:100%;
+                background-color:blue;
+                flex-direction: column;
+            }
+            
+        }
+        @media screen and (min-width:1000px) {
+            .div1{
+                width:100%;
+                background-color:red;
+                flex-direction: column;
+            }
+            
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="div1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+    </div>
+</body>
+</html>

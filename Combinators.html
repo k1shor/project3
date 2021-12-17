@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* Group Selector */
+        .div1,.div2{
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            margin: 5px;
+        }
+
+/* descendant selector */
+        /* .div1 p{
+            background-color: chartreuse;
+        } */
+
+/* child selector */
+        /* .div1>p{
+            background-color: chartreuse;
+        } */
+
+/* <!-- general siblings --> */
+    /* .div3~p{
+        background-color:chocolate
+    } */
+
+/* <!-- general siblings --> */
+    .div3+p{
+        background-color:chocolate
+    }
+    
+    </style>
+
+
+    
+
+
+
+</head>
+<body>
+
+
+    <div class="div1">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, neque?</p> 
+       <div class="div3">
+           <p>descendant, but not child</p>
+        </div>
+        <p>adjacent sibling</p>
+        <div>division</div>
+        <p>general sibling</p>
+        <p>general sibling</p>
+
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, eaque!</p>
+    <div class="div2">
+        There
+    </div>
+    
+</body>
+</html>
